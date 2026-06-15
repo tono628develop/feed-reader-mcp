@@ -1,0 +1,51 @@
+{
+  "name": "feed-reader-mcp",
+  "version": "0.1.0",
+  "description": "An MCP server that fetches and reads RSS/Atom feeds, so any MCP client (Claude, etc.) can pull the latest items from blogs, news sites, and release feeds.",
+  "type": "module",
+  "bin": {
+    "feed-reader-mcp": "dist/index.js"
+  },
+  "files": [
+    "dist",
+    "README.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "build": "tsc",
+    "start": "node dist/index.js",
+    "prepublishOnly": "npm run build"
+  },
+  "keywords": [
+    "mcp",
+    "model-context-protocol",
+    "rss",
+    "atom",
+    "feed",
+    "claude",
+    "news"
+  ],
+  "license": "MIT",
+  "author": "tono628develop",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tono628develop/feed-reader-mcp.git"
+  },
+  "homepage": "https://github.com/tono628develop/feed-reader-mcp",
+  "bugs": {
+    "url": "https://github.com/tono628develop/feed-reader-mcp/issues"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.0.0",
+    "rss-parser": "^3.13.0",
+    "zod": "^3.23.0"
+  },
+  "devDependencies": {
+    "@types/node": "^22.0.0",
+    "typescript": "^5.5.0"
+  },
+  "mcpName": "io.github.tono628develop/feed-reader"
+}
