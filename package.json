@@ -47,5 +47,8 @@
     "@types/node": "^22.0.0",
     "typescript": "^5.5.0"
   },
-  "mcpName": "io.github.tono628develop/feed-reader"
+  "mcpName": "io.github.tono628develop/feed-reader",
+  "overrides": {
+    "hono": "^4.12.25"
+  }
 }
